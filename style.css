@@ -37,6 +37,7 @@ body div {
     width: 80%;
     margin: 0 auto;
     height: 100dvh;
+    max-height: 100%;
     text-align: center;
     display: flex;
     flex-direction: column;
@@ -53,7 +54,14 @@ body div {
 }
 
 p{
-    margin-top: 2rem;
+    margin-top: 1rem;
     color: #EECA00;
     font-weight: bold;
+}
+
+img {
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 3rem;
+  width: 20%;
 }
