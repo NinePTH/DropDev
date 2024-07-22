@@ -1,0 +1,75 @@
+@font-face {
+    font-family: 'Upheavtt';
+    src: url(fonts/upheaval/upheavtt.ttf) format('truetype');
+  }
+  
+  @font-face {
+    font-family: 'Zftermin';
+    src: url(fonts/ZFTerminal/ZFTERMIN__.ttf) format('truetype');
+  }
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.gradient-background {
+    background: linear-gradient(300deg, #030E1C, #27374d, #030E1C);
+    background-size: 180% 180%;
+    animation: gradient-animation 18s ease-in-out infinite;
+}
+
+body {
+    color: #FFFFFF;
+    height: 100dvh;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+p {
+    font-family: Zftermin;
+    font-size: 3rem;
+}
+
+.container {
+    display: flex;
+    height: 80dvh;
+    justify-content: center;
+    align-items: center;
+}
+
+.container div {
+    flex: 1;
+    transition: flex 0.5s ease-in-out;
+    
+}
+
+.container div img {
+    width: 80%;
+    transition: transform 0.5s ease-in-out;
+    object-fit: cover;
+}
+
+.container div:hover {
+    flex: 3;
+}
+
+.container div:hover img {
+    transform: scale(1.1); /* Scale up the image on hover */
+}
+
+/* Gradient background animation */
+@keyframes gradient-animation {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+}
